@@ -69,6 +69,7 @@ h3{
     font-family: 'Cursed Timer ULiL';
     width: 45px;
     height: 45px;
+    background: inherit;
 }
 
 #mid-div{
