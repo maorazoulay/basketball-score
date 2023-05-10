@@ -20,15 +20,21 @@ function renderNewScore(addToScore, element){
     highlightLeader()
 }
 
+window.renderNewScore = renderNewScore
+
 function resetScore(){
     homeScore.textContent = guestScore.textContent = 0
     resetGlow()
 }
 
+window.resetScore = resetScore
+
 function resetGlow(){
     homeTitle.classList.remove("glow")
     guestTitle.classList.remove("glow")    
 }
+
+window.resetGlow = resetGlow
 
 function highlightLeader(){
     let currentHomeScore = parseInt(homeScore.textContent)    
@@ -44,26 +50,39 @@ function highlightLeader(){
     }
 }
 
+window.highlightLeader = highlightLeader
+
 function plusOneHome(){
     renderNewScore(1, homeScore)
 }
+
+window.plusOneHome = plusOneHome
 
 function plusTwoHome(){
     renderNewScore(2, homeScore)    
 }
 
+window.plusTwoHome = plusTwoHome
+
 function plusThreeHome(){
     renderNewScore(3, homeScore)    
 }
+window.plusThreeHome = plusThreeHome
 
 function plusOneGuest(){
     renderNewScore(1, guestScore)    
 }
 
+window.plusOneGuest = plusOneGuest
+
 function plusTwoGuest(){
     renderNewScore(2, guestScore)    
 }
 
+window.plusTwoGuest = plusTwoGuest
+
 function plusThreeGuest(){
     renderNewScore(3, guestScore)    
 }
+
+window.plusThreeGuest = plusThreeGuest
